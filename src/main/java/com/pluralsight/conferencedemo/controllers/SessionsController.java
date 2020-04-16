@@ -33,7 +33,7 @@ public class SessionsController {
 	public Session get(@PathVariable Long id) {
 		return sessionRepository.getOne(id);
 	}
-	
+
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public Session create(@RequestBody final Session session) {
